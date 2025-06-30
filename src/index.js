@@ -24,7 +24,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // during dev; Vite client
+    origin: "*", // during dev; Vite client
     credentials: true,
   })
 );
