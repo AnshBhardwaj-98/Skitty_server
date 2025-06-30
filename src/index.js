@@ -18,7 +18,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 //cors
-const allowedOrigins = ["http://localhost:5173", "https://skitty.vercel.app"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://skitty-frontend.onrender.com/",
+];
 
 app.use(
   cors({
