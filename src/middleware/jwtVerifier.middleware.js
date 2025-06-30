@@ -5,6 +5,7 @@ export const jwtVerifier = async (req, res, next) => {
   try {
     const token = req.cookies.jwt;
     if (!token) return res.status(401).json({ message: "cannot get token" });
+    console.log(token);
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
